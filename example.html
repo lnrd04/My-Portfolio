@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="example.css">
+    <title>Long Practice Website</title>    
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">LONGCODE</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <h1>Long Practice Website</h1>
+        <p>This single HTML file contains navigation, layout systems, animations, responsiveness, and JavaScript logic for practice and inspection.</p>
+        <div class="hero-buttons">
+            <button class="btn" onclick="scrollToSection('projects')">View Projects</button>
+            <button class="btn" onclick="scrollToSection('contact')">Contact</button>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>This section demonstrates a two-column layout using CSS Grid.</p>
+                <p>It collapses into a single column on smaller screens.</p>
+            </div>
+            <div>
+                <p>Use this area for images, illustrations, or profiles.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Responsive Design</div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card"><h3>Project One</h3><p>Description here</p></div>
+            <div class="project-card"><h3>Project Two</h3><p>Description here</p></div>
+            <div class="project-card"><h3>Project Three</h3><p>Description here</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea rows="5" placeholder="Message"></textarea>
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Long Code Practice. All rights reserved.</p>
+</footer>
+
+<script>
+    function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>

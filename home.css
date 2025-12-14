@@ -13,7 +13,7 @@ body {
     height: 100vh;
     height: 100dvh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.49);
+    background-color: rgba(0, 0, 0, 0.881);
     overflow-x: hidden;
 }
 .section1 {
