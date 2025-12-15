@@ -9,6 +9,7 @@
     box-sizing: border-box;
     user-select: none;
 }
+
 body {
     height: 100vh;
     height: 100dvh;
@@ -16,14 +17,16 @@ body {
     background-color: rgb(106, 106, 106);
     overflow-x: hidden;
 }
+
 .section1 {
     height: 800px;
     width: 100%;
     background-image: url('Assets/6155218.jpg');
     background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center; 
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 header {
     display: flex;
     justify-content: center;
@@ -33,6 +36,7 @@ header {
     margin-right: 40px;
     margin-left: 40px;
 }
+
 nav {
     max-width: 2000px;
     width: 2000px;
@@ -42,31 +46,38 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
+
 .name {
     font-size: 30px;
     font-weight: 300;
     font-family: 'Inria Serif';
     color: white;
 }
+
 span {
     color: #FFFC9F;
 }
+
 .nav-links {
     display: flex;
     gap: 50px;
 }
+
 li {
     list-style: none;
 }
+
 .nav-links a {
     text-decoration: none;
     font-family: 'Inria Serif';
     color: white;
     transition: all 0.3s ease;
 }
+
 .nav-links a:hover {
     color: red;
 }
+
 .profile {
     position: absolute;
     height: 500px;
@@ -75,6 +86,7 @@ li {
     border-radius: 500px;
     border: 3px solid #FFD7AB;
 }
+
 .text-profile {
     height: 600px;
     padding: 30px;
@@ -84,12 +96,14 @@ li {
     margin-left: 40px;
     margin-right: 40px;
 }
+
 .text-profile p {
     font-weight: 300;
     padding-top: 30px;
     font-family: 'Inria Serif';
     color: white;
 }
+
 .text-profile h1 {
     position: relative;
     font-size: 100px;
@@ -98,15 +112,18 @@ li {
     font-weight: 300;
     color: white;
 }
+
 .text-profile b {
     color: #FFFC9F;
 }
+
 .text-profile h3 {
     padding-top: 20px;
     font-weight: 100;
     font-family: 'Inria Serif';
     color: white;
 }
+
 .btn {
     position: relative;
     top: 30px;
@@ -120,14 +137,16 @@ li {
     font-family: 'Inria Serif';
 
 }
+
 .btn:hover {
     background-color: rgba(255, 0, 0, 0.604);
 }
+
 .section2 {
-    position: relative;  /* ensures pseudo-elements are positioned relative to this */
+    position: relative;
     height: 700px;
     width: 100%;
-    background: url('your-image.jpg') no-repeat center/cover; /* if you have a background */
+    background: url('your-image.jpg') no-repeat center/cover;
     overflow: hidden;
 }
 
@@ -136,7 +155,7 @@ li {
     content: "";
     position: absolute;
     width: 100%;
-    height: 250px; /* adjust fade thickness */
+    height: 250px;
     left: 0;
     pointer-events: none;
 }
@@ -144,14 +163,15 @@ li {
 .section2::before {
     top: 0;
     background: linear-gradient(to bottom, rgb(0, 0, 0), transparent);
-    z-index: -2; /* above background, below content */
+    z-index: -2;
 }
 
 .section2::after {
     bottom: 0;
     background: linear-gradient(to top, rgb(32, 32, 32), transparent);
-    z-index: -2; /* above background, below content */
+    z-index: -2;
 }
+
 .about-me {
     margin-left: 100px;
     margin-right: 100px;
@@ -161,6 +181,7 @@ li {
     padding-top: 50px;
 
 }
+
 .about-text {
     padding: 50px;
     display: flex;
@@ -170,36 +191,43 @@ li {
     bottom: 50px;
     gap: 40px;
 }
+
 .about-me img {
     width: 500px;
     max-width: 100%;
 }
+
 .about-text h1,
 .about-text p {
     color: white;
     font-family: 'Inria Serif';
     font-weight: 300;
 }
+
 .about-text h1 {
     font-size: 60px;
     font-family: 'Libre Baskerville';
 }
+
 .about-me p {
     font-size: 20px;
 }
+
 .section3 {
-    text-align: center;
     background-color: rgb(32, 32, 32);
     padding-top: 50px;
     height: 700px;
     width: 100%;
 }
+
 .section3 h1 {
+    text-align: center;
     font-family: 'Libre Baskerville';
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 300;
     color: white;
 }
+
 .projects-container {
     margin-top: 50px;
     margin-left: 50px;
@@ -207,62 +235,317 @@ li {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    justify-content: center; 
+    justify-content: center;
 }
+
 .project-card {
-    flex: 1 1 300px; 
-    max-width: 500px;
+    flex: 1 1 300px;
+    max-width: 700px;
     border: 5px solid #FFD7AB;
     border-radius: 8px;
     padding: 15px;
+    padding-bottom: 40px;
     text-align: center;
-    background-color: #818181; 
+    background-color: #818181;
     transition: all 0.3s ease;
 }
+
+.project-card p {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
 .project-card img {
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
+
+.project-card a {
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    font-size: 'Inria Serif';
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: rgba(255, 0, 0, 0.604);
+}
+
 .project-card:hover {
     transform: scale(1.1);
 }
 
+.project-card img,
+.project-card h3,
+.project-card p {
+    padding-top: 5px;
+}
+
+.section4 {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background: url('your-image.jpg') no-repeat center/cover;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+.section4::before,
+.section4::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    left: 0;
+    pointer-events: none;
+}
+
+.section4::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgb(32, 32, 32), transparent);
+    z-index: -2;
+}
+
+.section4::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgb(32, 32, 32), transparent);
+    z-index: -2;
+}
+
+.section4 h1 {
+    text-align: center;
+    font-family: 'Libre Baskerville';
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+}
+
+.my-skills-wrapper {
+    overflow: hidden;
+    width: 100%;
+    padding: 30px;
+}
+
+.my-skills {
+    display: flex;
+    gap: 40px;
+    flex-wrap: nowrap;
+    animation: scroll-horizontal 20s linear infinite;
+}
+
+.my-skills-card {
+    flex: 0 0 auto;
+    width: 500px;
+    background: #39393999;
+    border: 3px solid #FFD7AB;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.my-skills-card:hover {
+    transform: scale(1.05);
+}
+
+.my-skills-card video {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.my-skills-card p {
+    display: inline-flex;
+    margin: 10px 5px 0 5px;
+    max-width: 140px;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 1px solid yellow;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.type-skills {
+    background-color: #000;
+    /* Black base */
+    border: 2px solid #FFD7AB;
+    /* Neon border color */
+    box-shadow:
+        0 0 5px #FFD7AB,
+        0 0 10px #FFD7AB,
+        0 0 20px #FFD7AB,
+        0 0 40px #FFD7AB,
+        0 0 80px #FFD7AB;
+    transition: 0.3s;
+    transition: 0.3s;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-family: 'Inria Serif';
+    font-weight: 300;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: default;
+}
+
+.type-skills:hover {
+    transform: scale(1.1);
+    background-color: gray;
+    box-shadow:
+        0 0 10px #FFD7AB,
+        0 0 20px #FFD7AB,
+        0 0 40px #FFD7AB,
+        0 0 60px #FFD7AB,
+        0 0 120px #FFD7AB;
+    transition: 0.3s;
+}
+
+.section5 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f1f1f;
+    padding: 40px;
+}
+
+.section5 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f1f1f;
+    padding: 40px;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    height: 500px;
+    max-width: 1500px;
+    padding-left: 100px;
+    width: 1300px;
+    border-radius: 20px;
+    background-color: #3A3A3A;
+    box-shadow:
+        0 0 10px #ffd6ab58,
+        0 0 20px #ffd6ab60,
+        0 0 40px #FFD7AB,
+        0 0 60px #ffd6ab41,
+        0 0 120px #ffd6ab46;
+}
 
 
+.contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+}
 
+.contact-image img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 20px;
+    border: 2px solid #FFD7AB;
+    box-shadow: 0 0 25px rgba(255, 215, 171, 0.4);
+}
 
+/* RIGHT SIDE */
+.contact-fields {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+.contact-fields h2 {
+    color: white;
+    font-family: 'Libre Baskerville';
+    font-size: 40px;
+    font-weight: 300;
+}
 
+.contact-fields input,
+.contact-fields textarea {
+    width: 100%;
+    padding: 14px;
+    background: #111;
+    border: 1px solid #FFD7AB;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+}
 
+.contact-fields textarea {
+    height: 150px;
+    resize: none;
+}
 
+.contact-fields button {
+    align-self: flex-start;
+    padding: 12px 30px;
+    background: transparent;
+    color: #FFD7AB;
+    border: 2px solid #FFD7AB;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
+.contact-fields button:hover {
+    background: #FFD7AB;
+    color: #000;
+    box-shadow: 0 0 20px #FFD7AB;
+}
 
+footer {
+    background: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #00796b;
+}
 @media (max-width: 1024px) {
 
     .section {
         padding: 50px 20px;
     }
+
     .profile {
         height: 280px;
         top: 220px;
@@ -283,55 +566,131 @@ li {
         gap: 30px;
     }
 
-}@media (max-width: 700px) {
+}
+
+
+
+
+
+@media (max-width: 700px) {
     section {
         padding: 20px 20px;
     }
+
     .name {
         display: none;
     }
+
     .nav-links {
         font-size: 15px;
     }
+
     header {
         display: flex;
     }
+
     .profile {
         position: static;
         margin: 30px auto;
         display: block;
         height: 260px;
     }
+
     .text-profile p {
         padding-top: 0;
     }
+
     .text-profile {
         padding: 20px;
         text-align: center;
         height: auto;
     }
+
     .text-profile h1 {
         padding-top: 20px;
         font-size: 44px;
         max-width: 100%;
     }
+
     .section2 {
-        height: 900px;
+        height: 800px;
     }
+
     .about-me {
         margin-left: 10px;
         margin-right: 10px;
         flex-direction: column;
         text-align: center;
     }
+
     .about-text h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
+
     .about-text p {
-        font-size: 15px;
+        font-size: 12px;
     }
+
     .section3 {
         padding: 10px;
-        height: 800px;
+        height: 1300px;
+    }
+
+    .section4 {
+        height: 650px;
+        padding: 0;
+    }
+
+    .my-skills-card {
+        width: 300px;
+    }
+
+    @keyframes scroll-horizontal {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-900px);
+        }
+
+    }
+
+    .my-skills {
+        gap: 20px;
+        animation-duration: 20s;
+    }
+    .section5 {
+        padding-left: 70px;
+        padding-right: 70px;
+
+    }
+    .skills {
+        gap: 21px;
+    }
+
+    .type-skills p {
+        font-size: 8px;
+    }
+    .contact-image {
+        display: none;
+    }
+    .contact-form {
+        width: 300px;
+        padding-left: 20px;
+    }
+
+    .contact-fields {
+        width: 270px;
+    }
+    .contact-fields h2 {
+        font-size: 30px;
+    }
+    .contact-fields input {
+        height: 40px;
+    }
+    .contact-fields button {
+        padding: 5px 10px;
+        font-size: 12px;
     }
 }
