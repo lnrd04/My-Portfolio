@@ -142,6 +142,8 @@ li {
     background-color: rgba(255, 0, 0, 0.604);
 }
 
+
+
 .section2 {
     position: relative;
     height: 700px;
@@ -418,7 +420,7 @@ li {
 
 .type-skills:hover {
     transform: scale(1.1);
-    background-color: gray;
+    background-color: rgba(255, 0, 0, 0.604);
     box-shadow:
         0 0 10px #FFD7AB,
         0 0 20px #FFD7AB,
@@ -668,7 +670,6 @@ footer .social-links a {
     .skills {
         gap: 21px;
     }
-
     .type-skills p {
         font-size: 8px;
     }
@@ -678,8 +679,8 @@ footer .social-links a {
     .contact-form {
         width: 300px;
         padding-left: 20px;
+        padding-right: 20px;
     }
-
     .contact-fields {
         width: 270px;
     }
