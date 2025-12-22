@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.spacer {
+  height: 100vh;
+  background-color: #585757;
+}
+
+.animate-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 1000px;
+  height: 200px;
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+
+  /* initial state */
+  opacity: 0;
+  transform: translatex(100px);
+
+  /* animation */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* class to trigger animation */
+.box.show {
+  opacity: 1;
+  transform: translateY(0);
+}
