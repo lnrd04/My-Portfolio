@@ -32,19 +32,22 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 35px;
-    margin-right: 40px;
-    margin-left: 40px;
 }
 
 nav {
-    max-width: 2000px;
-    width: 2000px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1550px;
+    width: 1550px;
     display: flex;
+    padding: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
     align-items: center;
     justify-content: space-between;
+    background-color: rgba(92, 92, 92, 0.223);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .name {
@@ -85,26 +88,30 @@ li {
     right: 130px;
     border-radius: 500px;
     border: 3px solid #FFD7AB;
+        box-shadow: 
+    0 0 45px rgba(255, 215, 171, 0.4),
+    0 0 20px rgba(255, 215, 171, 0.4);
 }
 
 .text-profile {
-    height: 600px;
+    height: 700px;
     padding: 30px;
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
     margin-left: 40px;
-    margin-right: 40px;
+    margin-right: 50px;
 }
 
 .text-profile p {
     font-weight: 300;
-    padding-top: 30px;
+    padding-top: 120px;
     font-family: 'Inria Serif';
     color: white;
 }
 
 .text-profile h1 {
+    padding-top: 0px;
     position: relative;
     font-size: 100px;
     font-family: 'Libre Baskerville';
@@ -118,7 +125,7 @@ li {
 }
 
 .text-profile h3 {
-    padding-top: 20px;
+    padding-top: 0px;
     font-weight: 100;
     font-family: 'Inria Serif';
     color: white;
@@ -192,11 +199,31 @@ li {
     position: relative;
     bottom: 50px;
     gap: 40px;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.about-text.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .about-me img {
     width: 500px;
     max-width: 100%;
+    border-radius: 20px;
+    border: 2px solid #FFD7AB;
+    box-shadow: 
+    0 0 45px rgba(255, 215, 171, 0.4),
+    0 0 20px rgba(255, 215, 171, 0.4);
+    margin-left: 40px;
+    opacity: 0;
+    transition: opacity 0.12s ease, transform 0.6s ease;
+    transform: translateX(-400px);
+}
+.about-me img.show {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .about-text h1,
@@ -548,18 +575,29 @@ footer .social-links a {
         padding: 50px 20px;
     }
     .section1 {
-        height: 700px;
+        height: 600px;
     }
     .section2 {
         height: 600px;
+    }
+    .about-text {
+        margin-top: 60px;
+        height: 400px;
+    }
+    .about-me {
+        margin-top: 30px;
     }
     .about-me img {
         height: 400px;
         width: auto;
     }
     .about-text h1 {
-        font-size: 43px;
-        padding-top: 100px;
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    .about-text p {
+        font-size: 15px;
+        padding-top: 10px;
     }
     .section3 {
         height: 1100px;
@@ -582,13 +620,123 @@ footer .social-links a {
         font-size: 70px;
         max-width: 400px;
     }
-
+    nav {
+        width: 1030px;
+    }
     .nav-links {
         gap: 30px;
     }
 
 }
 
+/* Tablet Media Query */
+@media (max-width: 768px) {
+
+    /* Header / Nav adjustments */
+    nav {
+        max-width: 90%;
+        width: 90%;
+        padding-left: 30px;
+        padding-right: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    /* Profile and Text */
+    .profile {
+        height: 350px;
+        width: 350px;
+        right: 50px;
+        top: 120px;
+    }
+
+    .text-profile {
+        padding: 20px;
+        padding-top: 80px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .text-profile h1 {
+        font-size: 60px;
+        max-width: 350px;
+    }
+
+    .text-profile h3 {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* About Me Section */
+    .about-me {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 20px;
+    }
+
+    .about-me img {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .about-text h1 {
+        font-size: 40px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    /* Projects Section */
+    .projects-container {
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 20px;
+    }
+
+    .project-card {
+        flex: 1 1 80%;
+        max-width: 80%;
+    }
+
+    /* Skills Section */
+    .my-skills-card {
+        width: 350px;
+    }
+
+    .skills {
+        gap: 20px;
+    }
+
+    /* Contact Section */
+    .contact-form {
+        flex-direction: column;
+        width: 90%;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 30px;
+        height: auto;
+    }
+
+    .contact-image img {
+        max-width: 300px;
+    }
+}
 
 
 
@@ -603,7 +751,16 @@ footer .social-links a {
     .name {
         display: none;
     }
-
+    nav {
+        margin-top: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+        position: relative;
+        background-color: #f8f8f800;
+        backdrop-filter: blur(0);
+        flex-direction: column;
+        justify-content: center;
+    }
     .nav-links {
         font-size: 15px;
     }
@@ -624,6 +781,7 @@ footer .social-links a {
     }
 
     .text-profile {
+        margin-left: 50px;
         padding: 20px;
         text-align: center;
         height: auto;
@@ -647,6 +805,7 @@ footer .social-links a {
     }
     .about-me img {
         height: 300px;
+        margin: 0;
     }
     .about-text h1 {
         padding: 0;
