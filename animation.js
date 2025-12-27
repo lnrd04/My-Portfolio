@@ -28,25 +28,22 @@ window.addEventListener('scroll', () => {
     const windowHeight = window.innerHeight;
 
     if (cardTop < windowHeight * 0.8) {
-      card.style.transitionDelay = `${index * 0.2}s`; // ← stagger
+      card.style.transitionDelay = `${index * 0.2}s`; 
       card.classList.add('show');
     }
   });
 });
 
 
-// Select all the cards inside your carousel container
 const carousel = document.querySelectorAll('.my-skills-card');
 
-// Scroll animation for vertical page scroll
 window.addEventListener('scroll', () => {
   carousel.forEach((card, index) => {
     const cardTop = card.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
 
-    // Trigger animation when the card enters viewport
     if (cardTop < windowHeight * 0.9) {
-      card.style.transitionDelay = `${index * 0.3}s`; // stagger effect
+      card.style.transitionDelay = `${index * 0.3}s`; 
       card.classList.add('show');
     }
   });
@@ -61,7 +58,7 @@ window.addEventListener('scroll', () => {
     const windowHeight = window.innerHeight;
 
     if (cardTop < windowHeight * 0.7) {
-      card.style.transitionDelay = `${index * 0.2}s`; // stagger effect
+      card.style.transitionDelay = `${index * 0.2}s`; 
       card.classList.add('show');
     }
   });
