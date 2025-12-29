@@ -1,14 +1,3 @@
-const title = document.querySelector ('.title-aboutme');
-
-window.addEventListener('scroll', () => {
-  const titleTop =title.getBoundingClientRect().top;
-  const windowHeight = window.innerHeight;
-
-  if (titleTop < windowHeight * 0.9) {
-    title.classList.add('show');
-  }
-});
-
 const box = document.querySelector('.about-text');
 
 window.addEventListener('scroll', () => {
@@ -26,7 +15,7 @@ window.addEventListener('scroll', () => {
   const imgTop = img.getBoundingClientRect().top;
   const windowHeight = window.innerHeight;
 
-  if (imgTop < windowHeight * 0.4) {
+  if (imgTop < windowHeight * 0.5) {
     img.classList.add('show');
   }
 });
@@ -84,21 +73,4 @@ window.addEventListener('scroll', () => {
   if (boxTop < windowHeight * 0.6) {
     container.classList.add('show');
   }
-});
-
-const certificates = document.querySelectorAll('.certification-link');
-
-window.addEventListener('scroll', () => {
-  certificates.forEach((certificate, index) => {
-    const cardTop = certificate.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if (cardTop < windowHeight * 0.7) {
-      certificate.style.transitionDelay = `${index * 0.2}s`; 
-      certificate.classList.add('show');
-    } else {
-      certificate.classList.remove('show');
-      certificate.style.transitionDelay = '0s'; 
-    }
-  });
 });

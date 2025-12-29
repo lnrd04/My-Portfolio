@@ -32,53 +32,100 @@ ul {
 }
 
 /* ===================== NAVIGATION ===================== */
-header {
-    position: fixed;
-    top: 0;
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  color: white;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar-menu li a:hover {
+  color: #ff9900;
+}
+
+/* Hamburger toggle button */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  background: none;
+  border: none;
+}
+
+.navbar-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* hide by default on small screens */
+    flex-direction: column;
     width: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 1000;
-}
-
-nav {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 24px;
-}
-
-.nav-links a {
-    position: relative;
-    padding-bottom: 4px;
-}
-
-.nav-links a::after {
-    content: "";
+    background-color: #333;
     position: absolute;
+    top: 60px;
     left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background: #ffffff;
-    transition: width 0.3s ease;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
 }
 
-.nav-links a:hover::after {
-    width: 100%;
-}
+
+
 
 /* ===================== HERO ===================== */
 .hero {
