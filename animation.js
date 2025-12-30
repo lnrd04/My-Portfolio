@@ -186,5 +186,3 @@ window.addEventListener('scroll', () => {
     }
   });
 });
-
-
