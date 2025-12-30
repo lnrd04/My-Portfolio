@@ -6,7 +6,10 @@ window.addEventListener('scroll', () => {
 
   if (titleTop < windowHeight * 0.9) {
     title.classList.add('show');
-  }
+  } else {
+      title.classList.remove('show');
+      title.style.transitionDelay = '0s'; 
+    }
 });
 
 const box = document.querySelector('.about-text');
@@ -17,6 +20,9 @@ window.addEventListener('scroll', () => {
 
   if (boxTop < windowHeight * 0.4) {
     box.classList.add('show');
+  } else {
+    box.classList.remove('show');
+    box.style.transitionDelay = '0s';
   }
 });
 
@@ -28,6 +34,9 @@ window.addEventListener('scroll', () => {
 
   if (imgTop < windowHeight * 0.4) {
     img.classList.add('show');
+  } else {
+    img.classList.remove('show');
+    img.style.transitionDelay = '0s';
   }
 });
 
@@ -41,6 +50,9 @@ window.addEventListener('scroll', () => {
     if (cardTop < windowHeight * 0.8) {
       card.style.transitionDelay = `${index * 0.2}s`; 
       card.classList.add('show');
+    } else {
+      card.classList.remove('show');
+      card.style.transitionDelay = '0s';
     }
   });
 });
@@ -102,3 +114,77 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+const page = document.querySelector ('.title-page h1');
+
+window.addEventListener('scroll', () => {
+  const titleTop =page.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (titleTop < windowHeight * 0.9) {
+    page.classList.add('show');
+  } else {
+      page.classList.remove('show');
+      page.style.transitionDelay = '0s'; 
+    }
+});
+
+const titlepage = document.querySelector ('.title-page p');
+
+window.addEventListener('scroll', () => {
+  const titleTop =titlepage.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (titleTop < windowHeight * 0.9) {
+    titlepage.classList.add('show');
+  } else {
+      titlepage.classList.remove('show');
+      titlepage.style.transitionDelay = '0s'; 
+    }
+});
+
+const tool = document.querySelector ('.title-container');
+
+window.addEventListener('scroll', () => {
+  const titleTop =tool.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (titleTop < windowHeight * 0.9) {
+    tool.classList.add('show');
+  } else {
+      tool.classList.remove('show');
+      tool.style.transitionDelay = '0s'; 
+    }
+});
+
+const certificate = document.querySelector ('.my-certificate');
+
+window.addEventListener('scroll', () => {
+  const titleTop =certificate.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (titleTop < windowHeight * 0.9) {
+    certificate.classList.add('show');
+  } else {
+      certificate.classList.remove('show');
+      certificate.style.transitionDelay = '0s'; 
+    }
+});
+
+const mytools = document.querySelectorAll('.my-tools');
+
+window.addEventListener('scroll', () => {
+  mytools.forEach((card, index) => {
+    const cardTop = card.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (cardTop < windowHeight * 0.8) {
+      card.style.transitionDelay = `${index * 0.2}s`;
+      card.classList.add('show');
+    } else {
+      card.classList.remove('show');
+      card.style.transitionDelay = '0s';
+    }
+  });
+});
+
+
