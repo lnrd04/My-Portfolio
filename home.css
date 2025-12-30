@@ -1414,7 +1414,7 @@ footer p {
 
     .section3 {
         padding: 10px;
-        height: 1700px;
+        height: 1720px;
     }
     .title-page h1 {
         text-align: center;
@@ -1444,18 +1444,22 @@ footer p {
     }
     .tab-content h1 {
         margin-top: 10px;
-        font-size: 20px;
+        font-size: 40px;
     }
-    .my-tools {
-        height: 100px;
-        width: 100px;
+    .tools-grid,
+    .tools-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
     }
+    
     .my-tools img {
-        height: 40px;
+        height: 90px;
         width: auto;
     }
     .my-tools p {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .container h1 {
@@ -1464,9 +1468,8 @@ footer p {
     }
 
     .section4 {
-        height: 680px;
+        height: 400px;
         padding: 0;
-
     }
 
     .section4 h1 {
