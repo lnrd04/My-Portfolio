@@ -986,13 +986,8 @@ input[name="tabs"] {
     padding-left: 100px;
     width: 1300px;
     border-radius: 20px;
-    background-color: #ffffff0a;
-    box-shadow:
-        0 0 10px #ffd6ab58,
-        0 0 20px #ffd6ab60,
-        0 0 40px #FFD7AB,
-        0 0 60px #ffd6ab41,
-        0 0 120px #ffd6ab46;
+    border: 2px solid rgba(255, 255, 255, 0.575);
+    background-color: #ffffff09;
  
     opacity: 0;
     transform: translateY(50px);
@@ -1028,9 +1023,15 @@ input[name="tabs"] {
 }
 
 .contact-fields h2 {
-    color: white;
-    font-family: 'Libre Baskerville';
+    color: #FFD7AB;
+    font-family: 'Quicksand';
     font-size: 40px;
+    font-weight: 600;
+}
+.contact-fields p {
+    color: white;
+    font-family: 'Quicksand';
+    font-size: 15px;
     font-weight: 300;
 }
 
@@ -1054,8 +1055,9 @@ input[name="tabs"] {
     align-self: flex-start;
     padding: 12px 30px;
     background: transparent;
-    color: #FFD7AB;
-    border: 2px solid #FFD7AB;
+    color: #ffffff;
+    border: 2px solid #ffffff11;
+    background-color: rgba(255, 255, 255, 0.082);
     border-radius: 10px;
     font-size: 18px;
     cursor: pointer;
@@ -1064,8 +1066,9 @@ input[name="tabs"] {
 
 .contact-fields button:hover {
     background: #FFD7AB;
-    color: #000;
-    box-shadow: 0 0 20px #FFD7AB;
+    color: #ffffff;
+    background-color: rgba(255, 0, 0, 0.604);
+
 }
 
 
@@ -1493,7 +1496,7 @@ footer p {
         display: none;
     }
     .contact-form {
-        height: 450px;
+        height: 500px;
         width: 300px;
         padding-left: 20px;
         padding-right: 20px;
