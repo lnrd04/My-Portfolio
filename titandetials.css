@@ -43,6 +43,7 @@ body {
 }
 
 .title-page a {
+    display: inline-block;
     position: relative;
     left: 50px;
     bottom: 85px;
@@ -52,6 +53,12 @@ body {
     text-decoration: none;
     border-radius: 10px;
     color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+.title-page a:hover {
+    background-color: rgba(255, 0, 0, 0.604);
+    transform: translateY(-5px);
+
 }
 .title-page::after {
     content: ">";
@@ -236,6 +243,69 @@ footer p {
     color: white;
 }
 
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.picture-project img,
+.project-description {
+    opacity: 0; 
+    animation: fadeSlideUp 1s forwards;
+    animation-delay: 0.3s; 
+}
+
+.picture-project img:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.picture-project img:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.picture-project img:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tab-content.tools,
+.link {
+    opacity: 0;
+    animation: fadeSlideUp 1s forwards;
+}
+
+.tab-content.tools .my-tools:nth-child(1) {
+    animation-delay: 0.3s;
+}
+.tab-content.tools .my-tools:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.link {
+    animation-delay: 0.8s;
+}
+
+
+
+
+
+
 @media (max-width: 700px) {
     .section1 {
         height: 1700px;
@@ -299,8 +369,5 @@ footer p {
     }
     .link h1 {
         width: 200px;
-    }
-    .content-block {
-        
     }
 }
