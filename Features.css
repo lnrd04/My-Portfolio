@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    user-select: none;
+}
+body {
+    background:
+    linear-gradient(to bottom, transparent 70%, rgb(41, 41, 41) 100%),
+    url("assets/Fea2.jpg") center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(41, 41, 41);
+    height: 155vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to left, rgba(199, 199, 199, 0.432) 0,transparent 40%);
+    pointer-events: none;
+    height: 1000vh;
+    top: 100px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(153, 153, 153, 0.541);
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+    width: 100%;
+    height: 80px;
+}
+.logo img {
+    position: relative;
+    height: 40px;
+    right: 630px;
+}
+h1 {
+    position: absolute;
+    height: 40px;
+    left: 180px;
+}
+.navlink {
+    position: absolute;
+    height: 40px;
+    left: 480px;
+    top: 32px;
+}
+.navlink a {
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+    font-weight: 600;
+}
+.navlink i {
+   position: absolute;
+   left: 170px;
+   top: 1px;
+   font-size: 25px;
+}
+.headercontainer h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    top: 200px;
+    border: 10px solid rgb(255, 213, 0);
+}
+.headercontainer {
+    position: absolute;
+    right: 1210px;
+    font-size: 30px;
+}
+.headercontainer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 700px;
+    height: 200px;
+    top: 380px;
+    left: 130px;
+    font-size: 13px;
+    text-align: justify;
+        text-shadow: 
+    0 0 10px white,
+    0 0 20px white,
+    0 0 40px white;
+}
+.headercontainer2 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    top: 800px;
+    border: 10px solid rgb(255, 213, 0);
+    font-size: 20px;
+    text-shadow: 
+    0 0 10px white,
+    0 0 20px white,
+    0 0 40px white;
+}
+.headercontainer2 {
+    position: absolute;
+    right: 1050px;
+}.image1 img {
+  position: absolute;
+  border: 1px solid black;
+  width: 20%; 
+  height: auto;
+  right: 750px;
+  top: 1100px;
+  transition: 0.3s ease;
+}
+.image1 img:hover {
+    transform: scale(1.1);
+}
+.image1 h2 {
+    position: absolute;
+    top: 1130px;
+    left: 190px;
+    font-size: 30px;
+    text-shadow: 
+    0 0 10px white,
+    0 0 20px white,
+    0 0 40px white;
+}
+.image1 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    top: 1200px;
+    left: 120px;
+    font-size: 15px;
+    text-align: justify;
+    color: black;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.561);
+    border-radius: 10px;
+}
+.image2 img {
+  position: absolute;
+  border: 1px solid black;
+  width: 20%; 
+  height: auto;
+  right: 400px;
+  top: 1100px;
+  transition: 0.3s ease;
+}
+.image2 img:hover {
+    transform: scale(1.1);
+}
+.image2 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    top: 1200px;
+    right: 70px;
+    font-size: 15px;
+    text-align: justify;
+    color: black;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.561);
+    border-radius: 10px;
+}
+.image2 h2 {
+    position: absolute;
+    top: 1130px;
+    right: 70px;
+    font-size: 30px;
+    text-shadow: 
+    0 0 10px white,
+    0 0 20px white,
+    0 0 40px white;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.527);
+  padding: 10px 50px;
+  top: 2000px;
+  height: 300px;
+}
+.footerlogo img {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  top: 60px;
+  right: 1100px;
+}
+.headoffice h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  right: 450px;
+  color: white;
+    text-shadow: 
+  0 0 10px black,
+  0 0 20px black,
+  0 0 40px black;
+}
+.headoffice p {
+  position: absolute;
+  top: 150px;
+  right: 620px;
+  color: white;
+    text-shadow: 
+  0 0 10px black,
+  0 0 20px black,
+  0 0 40px black;
+}
+.contact h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  right: -450px;
+  color: white;
+  text-shadow: 
+  0 0 10px black,
+  0 0 20px black,
+  0 0 40px black;
+}
+.contact p {
+  position: absolute;
+  top: 150px;
+  right: 380px;
+  color: white;
+    text-shadow: 
+  0 0 10px black,
+  0 0 20px black,
+  0 0 40px black;
+}
+.foundus h1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 100px;
+  left: 730px;
+  font-size: 30px;
+  color: white;
+    text-shadow: 
+  0 0 10px black,
+  0 0 20px black,
+  0 0 40px black;
+}
+.foundus p {
+  position: absolute;
+  top: 150px;
+  right: 100px;
+  color: white;
+  text-shadow:
+  0 0 10px black,
+  0 0 20px black,
+  0 0 40px black;
+}
