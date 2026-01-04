@@ -750,6 +750,10 @@ body {
     height: auto;
   }
   .card-content {
+    width: 270px;
+  }
+  .card-content h2 {
+    width: 270px;
   }
 
   .gallery-card {
