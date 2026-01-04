@@ -1450,20 +1450,16 @@ footer p {
         font-size: 10px;
         text-align: center;
     }
-
     .section4 {
         height: 400px;
         padding: 0;
     }
-
     .section4 h1 {
         padding-top: 30px;
     }
-
     .my-skills-card {
         width: 300px;
     }
-
     @keyframes scroll-horizontal {
         0% {
             transform: translateX(0);
@@ -1474,7 +1470,6 @@ footer p {
         }
 
     }
-
     .my-skills {
         gap: 20px;
         animation-duration: 20s;
