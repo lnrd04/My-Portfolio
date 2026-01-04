@@ -256,7 +256,7 @@ body {
   padding: 20px 5%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.864), rgba(0, 0, 0, 0.777)),
-    url('assets/pexels-mary-taylor-5896844.jpg');
+    url('Assets/pexels-iamllwyd-34392995.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -369,7 +369,12 @@ body {
   height: 700px;
   width: 100%;
   padding: 40px 5%;
-  background-color: #000000;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.864), rgba(0, 0, 0, 0.777)),
+    url('Assets/pexels-shvetsa-5324968.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .small-chunk {
   display: flex;
@@ -721,8 +726,15 @@ body {
   }
 
   .section4 {
-    height: 1300px;
+    height: 1200px;
     width: auto;
+  }
+  .title h1 {
+    font-size: 25px;
+    color: #f1b434;
+  }
+  .title p {
+    font-size: 15px;
   }
   .title h1,
   .title p {
