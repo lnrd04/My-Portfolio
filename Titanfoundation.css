@@ -18,7 +18,7 @@ body {
   height: 800px;
   background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url('assets/faetures2.jpg') center / cover no-repeat;
+    url('Assets/pexels-umaraffan499-190417.jpg') center / cover no-repeat;
   color: white;
   position: relative;
 }
