@@ -32,28 +32,96 @@ body {
 
 .logo img {
   width: 48px;
+
+  animation: logoFade 2s ease forwards;
+}
+@keyframes logoFade {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .nav-links {
   display: flex;
   gap: 30px;
   list-style: none;
+
+  opacity: 0;
+  animation: navDrop 0.8s ease-out forwards;
+}
+@keyframes navDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f1b434;
+}
+.nav-links li {
+  opacity: 0;
+  transform: translateY(-15px);
+  animation: navLinkFade 0.5s ease forwards;
+}
+
+.nav-links li:nth-child(1) { animation-delay: 1s;}
+.nav-links li:nth-child(2) { animation-delay: 1.5s;}
+.nav-links li:nth-child(3) { animation-delay: 2s;}
+.nav-links li:nth-child(4) { animation-delay: 2.5s;}
+
+
+@keyframes navLinkFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .nav-right {
   display: flex;
   align-items: center;
   gap: 20px;
+
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: numFade 0.9s ease-in-out forwards;
+  animation-delay: 3s;
+
+}
+@keyframes numFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .phone {
   font-size: 14px;
+  transition: all 0.3s ease;
+}
+.phone:hover {
+  color: #f1b434;
 }
 
 .menu-btn {
@@ -77,6 +145,11 @@ body {
   padding: 20px;
   height: 400px;
   width: auto;
+
+    opacity: 0;
+  transform: translateX(-50px);
+  animation: slideleft 0.9s ease-in-out forwards;
+  animation-delay: 6s;
 }
 
 .hero-content {
@@ -88,12 +161,33 @@ body {
   font-size: 60px;
   line-height: 1.1;
   margin-bottom: 20px;
+
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideleft 0.9s ease-in-out forwards;
+  animation-delay: 4s;
+}
+
+@keyframes slideleft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .hero-content p {
   font-size: 16px;
   color: #e0e0e0;
   margin-bottom: 30px;
+
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideleft 0.9s ease-in-out forwards;
+  animation-delay: 4.5s;
 }
 
 .cta-btn {
@@ -104,6 +198,13 @@ body {
   border-radius: 30px;
   font-weight: 600;
   text-decoration: none;
+
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideleft 0.9s ease-in-out forwards;
+  animation-delay: 5s;
+
+  transition: all 0.3s ease;
 }
 
 .section1::after {
@@ -116,6 +217,9 @@ body {
   background: #fff;
   border-top-left-radius: 100% 80px;
   border-top-right-radius: 100% 80px;
+}
+.cta-btn:hover {
+  background-color: rgb(255, 136, 136);
 }
 
 
@@ -289,6 +393,10 @@ body {
   background-color: #f4b400;
   width: 140px;
   border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.context-btn:hover {
+  background-color: rgb(255, 136, 136);
 }
 
 .pic-right img {
@@ -739,6 +847,10 @@ body {
   padding: 10px 20px;
   color: black;
   font-weight: 600;
+  transition: all 0.3s ease;
+}
+.team a:hover {
+  background-color: rgb(255, 136, 136);
 }
 
 .picture-team {
@@ -849,10 +961,12 @@ body {
   font-weight: bold;
   font-size: 0.85rem;
   letter-spacing: 1px;
-  transition: transform 0.2s;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+
 }
 
 .view-all-btn:hover {
+  background-color: rgb(255, 136, 136);
   transform: translateY(-2px);
 }
 
