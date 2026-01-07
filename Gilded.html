@@ -221,8 +221,9 @@
                 <p>A Sweet Surprise for Your Loved Ones.</p>
 
                 <div class="gift-form">
-                    <form class="gift-form">
-                        <input type="email" name="email" placeholder="Your Email" required>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="gift-form">
+                        <input type="hidden" name="access_key" value="0c8f04d6-c0f6-42e9-a70f-9506ef0e4005">
+                        <textarea name="Feedback from Gilded-Glaze" placeholder="Your Message" required></textarea>
                         <button type="submit">SEND</button>
                     </form>
                 </div>
@@ -242,7 +243,7 @@
                 <div class="contact-info">
                     <p>+1(999)999-99-99</p>
                     <p>cake@bakers.com</p>
-                    <p>Ahmedabad, India</p>
+                    <p>Manila, philippines</p>
                 </div>
             </div>
 
@@ -269,9 +270,11 @@
             <div class="footer-contact-card">
                 <span class="label">CONTACT</span>
                 <h3>Have Questions? Reach Out!</h3>
-                <form class="footer-form">
-                    <input type="text" placeholder="Enter name" required>
-                    <input type="email" placeholder="Enter email" required>
+                <form action="https://api.web3forms.com/submit" method="post" class="footer-form">
+                    <input type="hidden" name="access_key" value="0c8f04d6-c0f6-42e9-a70f-9506ef0e4005">
+                    <input type="hidden" name="Here is the Email" value="">
+                    <input type="text" name="name" placeholder="Enter name" required>
+                    <input type="email" name="email" placeholder="Enter email" required>
                     <button type="submit">Send</button>
                 </form>
             </div>
@@ -280,6 +283,7 @@
         <div class="footer-bottom">
             <p>© All Rights Medrano Reserved</p>
         </div>
+        
     </footer>
 </body>
 
